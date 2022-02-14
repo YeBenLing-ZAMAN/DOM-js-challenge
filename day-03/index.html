@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .contianer {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .title{
+            width: 50vw;
+            height: 30vh;
+            text-align: center;
+        }
+        .headline{
+            text-transform: capitalize;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            font-family: 'Lilita One', cursive;
+            word-spacing: 5px;
+            letter-spacing: 2px;
+            font-size: 40px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .btn{
+            font-size: 2rem;
+            margin: 30px;
+            text-transform: capitalize;
+            color: white;
+            background-color: tomato;
+            outline: none;
+            border: 3px solid tomato;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: rgb(253, 79, 48);
+        }
+        .btn-copy{
+            font-size: 1rem;
+            text-transform: capitalize;
+            color: white;
+            background-color: slateblue;
+            outline: none;
+            border: 3px solid slateblue;
+            border-radius: 5px;
+            cursor: pointer;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            margin-left: 5px;
+        }
+        .input-field{
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contianer" class="contianer">
+        <div class="title">
+            <h1 id="headline" class="headline">chage the background color !!</h1>
+            <input type="text" name="" id="inputfeild" class="input-field" placeholder="#000000" disabled>
+            <button id="btn-copy" class="btn-copy">copy</button>
+            <br>
+            <button id="btn" class="btn">click here</button>
+        </div>
+    </div>
+
+    <script src="./inedx.js"></script>
+</body>
+
+</html>
