@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .contianer {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title {
+            width: 50vw;
+            height: 30vh;
+            text-align: center;
+        }
+
+        .headline {
+            text-transform: capitalize;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            font-family: 'Lilita One', cursive;
+            word-spacing: 5px;
+            letter-spacing: 2px;
+            font-size: 40px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            font-size: 2rem;
+            margin: 30px;
+            text-transform: capitalize;
+            color: white;
+            background-color: tomato;
+            outline: none;
+            border: 3px solid tomato;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(253, 79, 48);
+        }
+
+        .btn-copy {
+            font-size: 1rem;
+            text-transform: capitalize;
+            color: white;
+            background-color: slateblue;
+            outline: none;
+            border: 3px solid slateblue;
+            border-radius: 5px;
+            cursor: pointer;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            margin-left: 5px;
+        }
+
+        .input-field {
+            font-size: 1rem;
+        }
+
+
+        /* The snackbar - position it at the bottom and in the middle of the screen */
+        #snackbar {
+            visibility: hidden;
+            /* Hidden by default. Visible on click */
+            min-width: 250px;
+            /* Set a default minimum width */
+            margin-left: -125px;
+            /* Divide value of min-width by 2 */
+            background-color: #333;
+            /* Black background color */
+            color: #fff;
+            /* White text color */
+            text-align: center;
+            /* Centered text */
+            border-radius: 8px;
+            /* Rounded borders */
+            padding: 16px;
+            /* Padding */
+            position: fixed;
+            /* Sit on top of the screen */
+            z-index: 1;
+            /* Add a z-index if needed */
+            left: 50%;
+            /* Center the snackbar */
+            bottom: 30px;
+            /* 30px from the bottom */
+        }
+
+        /* Show the snackbar when clicking on a button (class added with JavaScript) */
+        #snackbar.show {
+            visibility: visible;
+            /* Show the snackbar */
+            /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+                However, delay the fade out process for 2.5 seconds */
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        /* Animations to fade the snackbar in and out */
+        @-webkit-keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contianer" class="contianer">
+        <div id="snackbar">copyed</div>
+        <div class="title">
+            <h1 id="headline" class="headline">chage the background color !!</h1>
+            <input type="text" name="" id="inputfeild" class="input-field" placeholder="#000000" disabled>
+            <button id="btn-copy" class="btn-copy">copy</button>
+            <br>
+            <button id="btn" class="btn">click here</button>
+        </div>
+    </div>
+
+    <script src="./inedx.js"></script>
+</body>
+
+</html>
