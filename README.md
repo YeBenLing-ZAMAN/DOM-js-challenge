@@ -11,4 +11,6 @@ DOM-js-challange-day-04 : https://dom-js-challange-day-04.netlify.app
 s
 # Special  challenge-live-server-link
 
-special-challenge-01 : https://special-challenge-01.netlify.app/
+special-challenge-01 : https://special-challenge-01-yebenling.netlify.app
+
+special-challenge-02 : https://special-challenge-02-yebenling.netlify.app
